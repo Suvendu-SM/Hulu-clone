@@ -1,0 +1,29 @@
+.ViewCard {
+  padding: 20px;
+  width: 300px;
+  color: white;
+  margin-right: 90px;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+.Rating {
+  display: none;
+}
+.ViewCard:hover > .Rating {
+  display: inline;
+}
+.ViewCard:hover {
+  transform: scale(1.08);
+}
+.ViewCard > img {
+  width: 300px;
+  object-fit: contain;
+  height: 200px;
+  margin: opx;
+}
+.ViewCard > p {
+  margin: 0px;
+}
+.ViewCard > h3 {
+  margin: 0px;
+}

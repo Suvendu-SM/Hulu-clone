@@ -1,0 +1,31 @@
+.Categories_list {
+  color: white;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Categories_list > h5 {
+  cursor: pointer;
+  opacity: 0.7;
+  padding-left: 2%;
+  width: 100%;
+  text-align: center;
+}
+.Categories_list > h5:hover {
+  opacity: 1;
+  transform: scale(1.09);
+  transition: transform 50ms ease-out;
+  color: white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.Categories_list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.Categories_list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

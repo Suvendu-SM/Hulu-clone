@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-
+import Categories from './Categories';
+import Header from './Header.js'
+import RenderVideos from './RenderVideos.js';
+import requestURI from './request.js'
 function App() {
+  const [ViewCardSelector, setViewCard] = useState(requestURI.fetchTrending)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Categories setViewCard={setViewCard} />
+      <RenderVideos ViewCardSelector={ViewCardSelector} />
     </div>
   );
 }

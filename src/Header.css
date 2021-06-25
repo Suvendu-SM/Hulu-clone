@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+  max-height: 40px;
+}
+
+.header_bar_icons {
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+}
+
+.header > img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.header_bar_icon {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header_bar_icon > .MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.header_bar_icon:hover > p {
+  display: inline;
+  padding: 0px;
+}
+
+.header_bar_icon > p {
+  display: none;
+  letter-spacing: 1px;
+  margin: auto;
+  font-size: small;
+  padding: 0px;
+}
+
+.active > p {
+  display: inline;
+}
+
+@media screen and (max-width: 600px) {
+  .header_bar_icon {
+    display: none;
+  }
+  .header > img {
+    height: 40px;
+    object-fit: contain;
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: 500px;
+  }
+}
